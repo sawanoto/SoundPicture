@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background: #9dcfcd;
+  font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+canvas {
+  display: block;
+  touch-action: none;
+}
+
+.home-button,
+.sound-button {
+  position: fixed;
+  z-index: 10;
+  top: max(14px, env(safe-area-inset-top));
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 3px solid #23473d;
+  border-radius: 50%;
+  background: rgba(255, 250, 232, .92);
+  color: #23473d;
+  box-shadow: 3px 3px 0 #23473d;
+  font-size: 22px;
+  text-decoration: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.home-button {
+  left: max(14px, env(safe-area-inset-left));
+}
+
+.sound-button {
+  right: max(14px, env(safe-area-inset-right));
+}
+
+.home-button:focus-visible,
+.sound-button:focus-visible {
+  outline: 4px solid #f5bd48;
+  outline-offset: 3px;
+}
+
+.sound-button[aria-pressed="true"] {
+  background: #f5bd48;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}

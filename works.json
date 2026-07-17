@@ -1,0 +1,9 @@
+[
+  {
+    "number": "01",
+    "title": "Frog Rain",
+    "description": "あめ、はっぱ、カエル。どんな音がするかな？",
+    "path": "./pages/01-frog-rain/",
+    "thumbnail": "./pages/01-frog-rain/FrogRain.png"
+  }
+]

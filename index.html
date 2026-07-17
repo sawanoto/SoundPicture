@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8d98b">
+  <title>SoundPicture | さわってあそぶ、音の絵本</title>
+  <link rel="stylesheet" href="./style.css?v=20260718-3">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">さわってあそぶ、音の絵本</p>
+      <h1>Sound<span>Picture</span></h1>
+      <p class="lead">すきな絵をえらんで、タップしてみよう。</p>
+    </header>
+
+    <section aria-labelledby="works-title">
+      <div class="section-heading">
+        <h2 id="works-title">おはなし</h2>
+        <span id="work-count" aria-live="polite"></span>
+      </div>
+      <div class="works" id="works"></div>
+    </section>
+  </main>
+
+  <template id="work-card">
+    <a class="work-card">
+      <span class="work-card__picture" aria-hidden="true">
+        <img class="work-card__image" alt="">
+        <span class="work-card__rain"></span>
+      </span>
+      <span class="work-card__number"></span>
+      <strong class="work-card__title"></strong>
+      <span class="work-card__description"></span>
+      <span class="work-card__action">あそぶ <span aria-hidden="true">→</span></span>
+    </a>
+  </template>
+
+  <script src="./gallery.js?v=20260718-3"></script>
+</body>
+</html>
