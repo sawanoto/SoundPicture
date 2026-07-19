@@ -3,7 +3,16 @@
     "number": "01",
     "title": "Frog Rain",
     "description": "あめ、はっぱ、カエル。どんな音がするかな？",
+    "theme": "frog-rain",
     "path": "./pages/01-frog-rain/",
     "thumbnail": "./pages/01-frog-rain/FrogRain.png"
+  },
+  {
+    "number": "02",
+    "title": "Paint Fire Flower",
+    "description": "すきな場所をタップして、夜空に絵の花火を咲かせよう。",
+    "theme": "paint-fire-flower",
+    "path": "./pages/02-paint-fire-flower/",
+    "thumbnail": "./pages/02-paint-fire-flower/PaintFireFlower.png"
   }
 ]

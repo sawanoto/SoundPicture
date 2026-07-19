@@ -110,6 +110,7 @@ h2 {
 
 .work-card__picture {
   position: relative;
+  container-type: size;
   grid-column: 1 / -1;
   height: 240px;
   overflow: hidden;
@@ -124,9 +125,12 @@ h2 {
   position: absolute;
   z-index: 1;
   inset: 0;
-  background:
-    repeating-linear-gradient(103deg, transparent 0 20px, rgba(226, 247, 249, .52) 21px 23px, transparent 24px 38px);
-  opacity: .75;
+  background-image:
+    radial-gradient(ellipse, rgba(226, 247, 249, .75) 0 2px, transparent 2.5px);
+  background-position: 0 0;
+  background-size: 38px 17px;
+  transform: skewX(-12deg) scale(1.12);
+  opacity: .82;
 }
 
 .work-card__image {
@@ -149,6 +153,23 @@ h2 {
   border: 4px solid rgba(230, 248, 242, .78);
   border-radius: 50%;
   box-shadow: 0 0 0 9px rgba(230, 248, 242, .13);
+}
+
+.work-card--paint-fire-flower .work-card__picture {
+  background: #121211;
+}
+
+.work-card--paint-fire-flower .work-card__picture::before,
+.work-card--paint-fire-flower .work-card__rain {
+  display: none;
+}
+
+.work-card--paint-fire-flower .work-card__image {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.12) contrast(1.08);
 }
 
 .work-card__number {

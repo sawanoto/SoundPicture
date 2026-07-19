@@ -2,7 +2,7 @@ const worksElement = document.querySelector("#works");
 const countElement = document.querySelector("#work-count");
 const template = document.querySelector("#work-card");
 
-fetch("./works.json")
+fetch("./works.json?v=20260720-2", { cache: "no-cache" })
   .then((response) => {
     if (!response.ok) throw new Error("作品一覧を読み込めませんでした。");
     return response.json();
@@ -14,6 +14,7 @@ fetch("./works.json")
       const card = template.content.cloneNode(true);
       const link = card.querySelector("a");
       link.href = work.path;
+      if (work.theme) link.classList.add(`work-card--${work.theme}`);
       link.setAttribute("aria-label", `${work.title}であそぶ`);
       card.querySelector(".work-card__image").src = work.thumbnail;
       card.querySelector(".work-card__number").textContent = work.number;
