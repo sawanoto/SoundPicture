@@ -172,6 +172,32 @@ h2 {
   filter: saturate(1.12) contrast(1.08);
 }
 
+.work-card--shooting-star .work-card__picture {
+  background:
+    radial-gradient(circle at 72% 22%, rgba(120, 161, 255, .2), transparent 34%),
+    linear-gradient(#071329, #102957 58%, #1b3e68);
+}
+
+.work-card--shooting-star .work-card__picture::before {
+  background-image:
+    radial-gradient(circle, rgba(239, 243, 184, .9) 0 1.5px, transparent 2px);
+  background-size: 43px 37px;
+  transform: none;
+  opacity: .65;
+}
+
+.work-card--shooting-star .work-card__rain {
+  display: none;
+}
+
+.work-card--shooting-star .work-card__image {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.08) contrast(1.04);
+}
+
 .work-card__number {
   color: #b16e27;
   font-size: .82rem;

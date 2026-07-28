@@ -2,7 +2,7 @@ const worksElement = document.querySelector("#works");
 const countElement = document.querySelector("#work-count");
 const template = document.querySelector("#work-card");
 
-fetch("./works.json?v=20260720-2", { cache: "no-cache" })
+fetch("./works.json?v=20260729-1", { cache: "no-cache" })
   .then((response) => {
     if (!response.ok) throw new Error("作品一覧を読み込めませんでした。");
     return response.json();

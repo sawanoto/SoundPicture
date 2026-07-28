@@ -14,5 +14,13 @@
     "theme": "paint-fire-flower",
     "path": "./pages/02-paint-fire-flower/",
     "thumbnail": "./pages/02-paint-fire-flower/PaintFireFlower.png"
+  },
+  {
+    "number": "03",
+    "title": "Shooting Star",
+    "description": "夜空を流れる星を眺めながら、8つの星でドレミを奏でよう。",
+    "theme": "shooting-star",
+    "path": "./pages/03-shooting-star/",
+    "thumbnail": "./pages/03-shooting-star/ShootingStar.png"
   }
 ]
